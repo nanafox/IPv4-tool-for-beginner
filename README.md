@@ -1,32 +1,32 @@
-# IPv4 Tool for Beginner
+# IPv4 Learning Tool
 
-IP Tool is a Python-based command-line utility for working with IP addresses. 
+IP Tool is a Python-based command-line utility for working with IP addresses.
 
 It provides various functionalities such as:
- - converting binary IP to decimal IP
- - determining IP class and private/public status 
- - calculating possible subnets
- - and more.
 
-### **Capabilities:**
--   Converting a binary IP address to a dotted decimal notation IP address
--   Converting an IP address to binary
--   Finding the network address from an IP address and subnet mask
--   Finding the network address from an IP/CIDR notation
--   Calculating possible subnetting from an IP range
--   Determining the IP class and private/public status
--   Displaying all information for an IP address and subnet
+- converting binary IP to decimal IP
+- determining IP class and private/public status
+- calculating possible subnets
+- and more.
+
+## **Capabilities:**
+
+- Converting a binary IP address to a dotted decimal notation IP address
+- Converting an IP address to binary
+- Finding the network address from an IP address and subnet mask
+- Finding the network address from an IP/CIDR notation
+- Calculating possible subnetting from an IP range
+- Determining the IP class and private/public status
+- Displaying all information for an IP address and subnet
 
 ## Installation
 
-1. Clone this repository to your local machine.
-2. `git clone https://github.com/nanafox/IPv4-tool-for-beginner.git` _(Forked)_ **OR**
-3. `git clone https://github.com/Blindsinner/IPv4-tool-for-beginner.git` _(Original Developer)_
-
+1. Clone this repository.
+`git clone https://github.com/nanafox/ipv4-learning.git`
 
 ## Usage
 
-To use the command-line interface, navigate to the directory containing the `ip_tool.py` script and run: 
+To use the command-line interface, navigate to the directory containing the `ip_tool.py` script and run:
 
 `python ip_tool.py`
 
@@ -34,29 +34,29 @@ To use the command-line interface, navigate to the directory containing the `ip_
 
 ### Convert binary IP address to dotted decimal notation
 
-```
+```output
 Enter the binary IP address: 11000000.10101000.00000001.00000001
 Decimal IP: 192.168.1.1
 ```
 
 ### Convert IP address to binary
 
-```
+```ouput
 Enter the IP address: 192.168.1.1
 Binary IP Address: 11000000.10101000.00000001.00000001
-``` 
+```
 
 ### Find network address from IP and subnet mask
 
-```
+```output
 Enter the IP address: 192.168.1.1
 Enter the subnet mask: 255.255.255.0
 Network address with CIDR Notation: 192.168.1.0/24
-``` 
+```
 
 ### Find network address from IP/CIDR notation
 
-```
+```output
 Enter the IP address/CIDR: 192.168.1.1/24
 Network address: 192.168.1.0
 IP Subnet Mask: 255.255.255.0
@@ -65,7 +65,8 @@ IP Subnet Mask: 255.255.255.0
 ### Calculate possible subnetting from IP range
 
 #### Example 1 - With new prefix
-```
+
+```output
 Enter the IP network: 192.168.10.0
 Enter the subnet mask or CIDR: 24
 Enter new netmask/CIDR: 27
@@ -83,7 +84,8 @@ Binary Subnet Mask: 11111111.11111111.11111111.00000000
 ```
 
 #### Example 2 - Without a new prefix
-```commandline
+
+```output
 Enter the IP network: 192.168.10.5
 Enter the subnet mask or CIDR: 23
 Enter new netmask/CIDR: 
@@ -98,9 +100,10 @@ PTR IP Address: 5.10.168.192.in-addr.arpa
 PTR Network Address: 10.168.192.in-addr.arpa
 Binary Subnet Mask: 11111111.11111111.11111110.00000000
 ```
+
 ### Determine IP class and private/public status
 
-```
+```output
 Enter the IP address: 192.168.1.1
 Network Class: C
 Address Type: Private
@@ -108,7 +111,7 @@ Address Type: Private
 
 ### Display all information for an IP address and subnet
 
-```
+```output
 Enter the IP address: 192.168.10.4
 Enter the subnet mask or CIDR notation: 24
 
